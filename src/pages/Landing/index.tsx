@@ -25,12 +25,16 @@ export default function Landing() {
 
         <div className="buttons-container">
           
-            <img src={studyIcon} alt="Estudar" />
+        <a className="study" href="#">
+          <img src={studyIcon} alt="Estudar" />
             Estudar
-          
-          
+        </a>
+            
+        <a className="give-classes" href="#">
             <img src={giveClassesIcon} alt="Dar Aulas" />
             Dar Aulas
+        </a>
+            
           
         </div>
 

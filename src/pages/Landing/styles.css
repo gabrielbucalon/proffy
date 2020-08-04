@@ -115,6 +115,16 @@
     .buttons-container a {
       font-size: 2.4rem;
     }
+
+    .buttons-container a.study{
+        background: var(--color-primary-lighter);
+    }
+
+    .buttons-container a.give-classes{
+        background: var(--color-secundary);
+    }
+
+
     .total-connections {
       grid-area: total;
       justify-self: flex-end;
