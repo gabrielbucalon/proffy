@@ -7,6 +7,7 @@ import landingImg from "../../assets/images/landing.svg";
 import studyIcon from "../../assets/images/icons/study.svg";
 import giveClassesIcon from "../../assets/images/icons/give-classes.svg";
 import purpleHeartIcon from "../../assets/images/icons/purple-heart.svg";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
   return (
@@ -25,15 +26,15 @@ export default function Landing() {
 
         <div className="buttons-container">
           
-        <a className="study" href="#">
+        <Link className="study" to="study">
           <img src={studyIcon} alt="Estudar" />
             Estudar
-        </a>
+        </Link>
             
-        <a className="give-classes" href="#">
+        <Link className="give-classes" to="give-classes">
             <img src={giveClassesIcon} alt="Dar Aulas" />
             Dar Aulas
-        </a>
+        </Link>
             
           
         </div>

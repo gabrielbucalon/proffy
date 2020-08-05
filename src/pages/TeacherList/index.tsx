@@ -1,8 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+import logoImg from '../../assets/images/logo.svg';
+import backIcon from '../../assets/images/icons/back.svg';
+
+
+import './styles.css';
 
 function TeacherList(){
     return (
-        <h1>TeacherList</h1>
+        <div id="page-techaer-list">
+            <header className="page-header">
+                <div className="top-bar-container">
+                    <Link to="/">
+                        <img src={backIcon} alt="Voltar"/>
+                    </Link>                    
+                    
+                    <img  src={logoImg} alt="Voltar"/>
+                </div>
+
+                <div className="header-content">
+                    <strong>Estẽs são os proffys disponíveis.</strong>
+                </div>
+            </header>
+        </div>
     )
 }
 
